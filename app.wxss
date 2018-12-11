@@ -1,0 +1,35 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+.menuBar{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+
+}
+.menuBar view{
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding-top: 10rpx;
+}
+.menuBar view image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.menuBar view text{
+  display: block;
+  font-size: 30rpx;
+  color: #A09FA6;
+}

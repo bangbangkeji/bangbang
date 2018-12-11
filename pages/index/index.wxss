@@ -1,0 +1,174 @@
+/**index.wxss**/
+.index{
+  background-color: #f8f8f8;
+  width: 100%;
+}
+
+.top_img {
+  text-align: center;
+  background-color: #fff;
+}
+
+.top_img image{
+  height: 270rpx;
+  width: 700rpx;
+}
+.con{
+  padding-top: 40rpx;
+  height: 400rpx;
+   background-color: #fff;
+}
+
+.con view image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.con view text{
+  display: block;
+}
+.con_img1{
+  float: left;
+}
+.con_img1 view{
+ float: left;
+ text-align: center;
+}
+
+.con_img2{
+  float: left;
+  padding-top: 30rpx;
+}
+.con_img2 view{
+ float: left;
+ text-align: center;
+}
+.con_img_a{
+  margin-left: 50rpx;
+}
+.con_img_b{
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+}
+.mortgage{
+  margin-top: 10rpx;
+  height: 200rpx;
+  width: 100%;
+  background-color: #fff;
+}
+.mortgage view{
+  text-align: center;
+  float: left;
+  width: 25%;
+  padding-top: 20rpx;
+}
+.mortgage view image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.mortgage view text{
+  display: block;
+  padding-top: 10rpx;
+  font-size: 35rpx;
+}
+.news{
+margin-top: 10rpx;
+background-color: #fff;
+height: 100rpx;
+line-height: 100rpx;
+}
+.news image{
+  width: 30rpx;
+  height: 30rpx;
+  padding-left: 50rpx;
+}
+.news text{
+  font-size: 30rpx;
+  padding-left: 20rpx;
+}
+.bot{
+  background-color: #fff;
+  margin-top: 10rpx;
+  
+}
+.bot_top{
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom:1px solid #eee;
+}
+.bot_top image{
+  width: 10rpx;
+  height: 10rpx;
+}
+.xian{
+  width: 10rpx;
+  height: 50rpx;
+  background-color: rgb(66, 199, 66);
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+  border-radius: 30rpx;
+}
+.bot_con{
+  padding-top: 30rpx;
+  height: 130rpx;
+  position: relative;
+  border-bottom:1px solid #eee;
+}
+
+
+.ka_type{
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+}
+.bot_fl{
+  font-size: 28rpx;
+  color:#999999 ;
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+}
+
+.banli{
+  text-align: center;
+  position: absolute;
+  right: 30rpx;
+  top: 45rpx;
+  font-size: 32rpx;
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border:5rpx solid rgb(40, 235, 128);
+  border-radius: 30rpx;
+  color:rgb(40, 235, 128) ;
+}
+.bot_h{
+  height: 100rpx;
+}
+.menuBar{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+
+}
+.menuBar view{
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding-top: 10rpx;
+}
+.menuBar view image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.menuBar view text{
+  display: block;
+  font-size: 30rpx;
+  color: #A09FA6;
+}
+
+
+
+
+

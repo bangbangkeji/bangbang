@@ -1,0 +1,101 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="top_img">
+      <image  class="" src="../imgs/sy_top.png" ></image>
+  </view>
+
+ <view class="con">
+      <view class='con_img1'>
+        <view class='con_img_a'>
+          <image  class="" src="../imgs/sy_img11.png" ></image>
+          <text>货运信息</text>
+        </view>
+        <view class='con_img_b'>
+          <image  class=""src="../imgs/sy_img12.png"></image>
+          <text>ETC服务</text>
+         </view>
+         <view class='con_img_c'>
+            <image src="../imgs/sy_img13.png"></image>
+            <text>保险分期</text>
+        </view>
+      </view>
+
+      <view class='con_img2'>
+        <view class='con_img_a'>
+          <image  class="" src="../imgs/sy_img21.png"></image>
+          <text>油卡充值</text>
+        </view>
+        <view class='con_img_b'>
+          <image  class=""src="../imgs/sy_img22.png"></image>
+          <text>轮胎更换</text>
+         </view>
+         <view class='con_img_c'>
+            <image class="" src="../imgs/sy_img23.png"></image>
+            <text>新车加盟</text>
+        </view>
+      </view>
+  </view>
+
+  <view class='mortgage'>
+    <view>
+      <image src="../imgs/anjie_img1.png"></image>
+      <text>按揭还款</text>
+    </view>
+    <view>
+      <image src="../imgs/anjie_img2.png"></image>
+      <text>按揭计算</text>
+    </view>
+    <view>
+      <image src="../imgs/anjie_img3.png"></image>
+      <text>运费计算</text>
+    </view>
+    <view>
+      <image src="../imgs/anjie_img4.png"></image>
+      <text>分享有礼</text>
+    </view>
+  </view>
+
+  <view class='news'>
+        <image class="" src="../imgs/news.png"></image>
+        <text>帮帮货运平台1.0版本正式上线啦</text>
+  </view>
+
+  <view class='bot'>
+    <view class='bot_top'>
+      <view class='xian'></view>
+      <text>油卡办理</text>
+    </view>
+
+    <view class='bot_con'>
+        <text class='ka_type'>全国联名卡</text>
+        <view class='bot_fl'>消费最高返利8%，全国中石化通用</view>
+        <view class='banli'>去办理</view>
+    </view>
+    <view class='bot_con'>
+        <text class='ka_type'>广西优惠卡</text>
+        <view class='bot_fl'>消费最高返利8%，全国中石化通用</view>
+        <view class='banli'>去办理</view>
+    </view>
+  </view>
+
+  <view class='bot_h'></view>
+
+  <view class='menuBar'>
+    <view>
+      <image src="../imgs/bot_img1.png"></image>
+      <text>首页</text>
+    </view>
+    <view>
+      <image src="../imgs/bot_img2.png"></image>
+      <text>最新消息</text>
+    </view>
+    <view>
+      <image src="../imgs/bot_img3.png"></image>
+      <text>已接订单</text>
+    </view>
+    <view class='munu_img_d'>
+      <image src="../imgs/bot_img3.png"></image>
+      <text>我的</text>
+    </view>
+  </view>
+</view>
