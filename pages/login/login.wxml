@@ -16,6 +16,10 @@
     </view>
   </view>
 
+  <view class='but'>
+    <text>登陆</text>
+  </view>
+
   <view class='wx_login'>
     <view class='left'></view>
     <text>微信授权登陆</text>

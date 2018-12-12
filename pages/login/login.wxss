@@ -78,10 +78,6 @@ font-size: 30rpx;
   text-align: center;
   margin-top: 180rpx;
 }
-.waiquan {
- 
- background-color: red;
-}
 .waiquan image{
    width: 50rpx;
    height: 52rpx;
