@@ -34,8 +34,7 @@ Page({
                   
                 })
             }
-        })
-    
+        }),
          wx.request({
            
            url: app.globalData.host+'/bbApp/getMessageList',
