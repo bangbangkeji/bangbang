@@ -1,0 +1,84 @@
+/* pages/login/login.wxss */
+.top{
+ text-align: center;
+}
+.top image{
+  width: 25rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.con{
+  margin-top: 150rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.row{
+  border-bottom:1rpx solid #eee;
+  padding-bottom: 20rpx;
+  padding-top: 80rpx;
+
+}
+.tel{
+  width: 30rpx;
+  height: 40rpx;
+  float: left;
+  margin-top: 7rpx;
+  margin-right: 10rpx;
+  margin-left: 50rpx;
+  
+}
+.new{
+  width: 50rpx;
+  height: 40rpx;
+  float: left;
+  margin-top: 7rpx;
+  margin-right: 10rpx;
+  margin-left: 35rpx;
+  
+}
+.row input{
+  font-size: 30rpx;
+  padding-left: 60rpx;
+}
+.code{
+float: right;
+padding-right: 10rpx;
+margin-top: -50rpx;
+color: #999999;
+font-size: 30rpx;
+}
+.wx_login{
+  padding-top: 80rpx;
+  font-size: 30rpx;
+  width: 100%;
+  text-align: center;
+}
+.left{
+  width: 38%;
+  height: 2rpx;
+  background-color: #eee;
+  float: left;
+  margin-top: 20rpx;
+}
+.right{
+  width:38% ;
+  height: 2rpx;
+  background-color: #eee;
+  float: left;
+  margin-top: 20rpx;
+}
+.wx_login text{
+  float: left;
+  clear: #e8e8e8;
+}
+.wx_img{
+  
+  text-align: center;
+  margin-top: 180rpx;
+}
+.waiquan image{
+   width: 50rpx;
+   height: 52rpx;
+}
