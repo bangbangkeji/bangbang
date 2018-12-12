@@ -12,9 +12,9 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.4.1",
 	"appid": "wx06a2374e78273fbf",
-	"projectname": "%E6%B5%8B%E8%AF%95",
+	"projectname": "wx_driver",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
