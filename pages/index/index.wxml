@@ -7,6 +7,10 @@
  <view class="con">
       <view class='con_img1'>
         <view class='con_img_a'>
+
+          <text wx:if="{{list==0}}"></text>
+          <text class='hy_sum' wx:if="{{list>0&&list<99}}">{{list}}</text>
+          <text class='hy_sum' wx:if="{{list>=100}}">99+</text>
           <image  class="" src="../imgs/sy_img11.png" ></image>
           <text>货运信息</text>
         </view>
@@ -57,7 +61,7 @@
 
   <view class='news'>
         <image class="" src="../imgs/news.png"></image>
-        <text>帮帮货运平台1.0版本正式上线啦</text>
+        <text>{{newsCon}}</text>
   </view>
 
   <view class='bot'>

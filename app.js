@@ -1,5 +1,8 @@
+
+
 //app.js
 App({
+
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -34,6 +37,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    host:"http://192.168.0.191:8080/bb-admin/app"
   }
 })

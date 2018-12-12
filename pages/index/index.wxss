@@ -44,10 +44,30 @@
 }
 .con_img_a{
   margin-left: 50rpx;
+  position: relative;
 }
 .con_img_b{
   margin-left: 100rpx;
   margin-right: 100rpx;
+  position: relative;
+}
+.con_img_c{
+  position: relative;
+}
+.hy_sum{
+  width: 30rpx;
+  height: 20rpx;
+  text-align: center;
+  line-height: 20rpx;
+  background-color: red;
+  border-radius: 40rpx;
+  color: #fff;
+  font-size: 17rpx;
+  position: absolute;
+  right: 20rpx;
+  top:5rpx;
+  border:3rpx solid #fff;
+  
 }
 .mortgage{
   margin-top: 10rpx;
