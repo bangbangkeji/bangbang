@@ -13,6 +13,7 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        
       }
     })
     // 获取用户信息
@@ -37,7 +38,6 @@ App({
     })
   },
   globalData: {
-    userInfo: null,
-    host:"http://192.168.0.191:8080/bb-admin/app"
+    host:"http://192.168.0.175:8080/bb-admin/app"
   }
 })

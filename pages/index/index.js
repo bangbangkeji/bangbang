@@ -20,7 +20,7 @@ Page({
         var that = this
         
         wx.request({
-          url: 'http://192.168.0.191:8080/bb-admin/app/bbApp/getIndexData',
+          url: app.globalData.host +'/app/bbApp/getIndexData',
             headers: {
                 'Content-Type': 'application/json'
             },
