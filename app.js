@@ -1,5 +1,3 @@
-
-
 //app.js
 App({
 
@@ -10,10 +8,53 @@ App({
     wx.setStorageSync('logs', logs)
 
     // 登录
+
     wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        
+      success: function (r) {
+        var code = r.code;//登录凭证
+        if (code) {
+          //2、调用获取用户信息接口
+          wx.getUserInfo({
+            success: function (res) {
+              console.log(code + "111");
+              console.log({ encryptedData: res.encryptedData, iv: res.iv, code: code })
+              //3.请求自己的服务器，解密用户信息 获取unionId等加密信息
+              wx.request({
+                //url: 'http://192.168.0.191:8080/bb-admin/app/weixin/loginUser',//自己的服务接口地址
+                url: 'https://www.bangbanghuoyun.com/bb-test/app/weixin/loginUser',//自己的服务接口地址 
+                //url: this.globalData.host+'/app/weixin/loginUser',//自己的服务接口地址
+                method: 'post',
+                header: {
+                  'content-type': 'application/x-www-form-urlencoded'
+                },
+                data: { encryptedData: res.encryptedData, iv: res.iv, code: code },
+                success: function (data) {
+
+                  //4.解密成功后 获取自己服务器返回的结果
+                  if (data.data.status == 1) {
+                    var userInfo_ = data.data.userInfo;
+                    console.log(userInfo_)
+                  } else {
+                    console.log(data.data.msg)
+                  }
+
+                },
+                fail: function () {
+                  console.log('系统错误')
+                }
+              })
+            },
+            fail: function () {
+              console.log('获取用户信息失败')
+            }
+          })
+
+        } else {
+          console.log('获取用户登录态失败！' + r.errMsg)
+        }
+      },
+      fail: function () {
+        console.log('登陆失败')
       }
     })
     // 获取用户信息
@@ -25,6 +66,13 @@ App({
             success: res => {
               // 可以将 res 发送给后台解码出 unionId
               this.globalData.userInfo = res.userInfo
+              const userInfo = res.userInfo
+              const nickName = userInfo.nickName
+              const avatarUrl = userInfo.avatarUrl
+              const gender = userInfo.gender // 性别 0：未知、1：男、2：女
+              const province = userInfo.province
+              const city = userInfo.city
+              const country = userInfo.country
 
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
@@ -38,6 +86,8 @@ App({
     })
   },
   globalData: {
-    host:"http://192.168.0.175:8080/bb-admin/app"
+    userInfo: null,
+    //host:"http://192.168.0.191:8080/bb-admin/app"
+    host: "https://www.bangbanghuoyun.com/bb-test"
   }
 })
