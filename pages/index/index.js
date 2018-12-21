@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+const token = wx.getStorageSync('token')
 var newsCon = {}
 Page({
   data: {
@@ -18,13 +19,11 @@ Page({
   },
   onLoad: function () {
         var that = this
-        
         wx.request({
           url: app.globalData.host +'/app/bbApp/getIndexData',
-            headers: {
+            header: {
                 'Content-Type': 'application/json'
             },
-            
             success: function (res) {
                 //将获取到的json数据，存在名字叫list的这个数组中
               var list = {};
@@ -36,15 +35,13 @@ Page({
             }
         }),
          wx.request({
-           
-           url: app.globalData.host+'/bbApp/getMessageList',
-
-            headers: {
-              'Content-Type': 'application/json'
+           url: app.globalData.host+'/app/bbApp/getMessageList',
+            header:{
+              'Content-Type': 'application/json',
+              'Authorization': token
             },
-
             success: function (res) {
-              console.log("11");
+              //console.log(token);
               //将获取到的json数据，存在名字叫list的这个数组中
               if(res.data.code=="0"){
                   that.setData({
